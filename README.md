@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://pri8899.github.io/">
-    <img src="https://img.shields.io/badge/%20Interactive%20macOS%20Portfolio-pri8899.github.io-007AFF?style=for-the-badge&logo=apple&logoColor=white" alt="Live macOS Portfolio" />
+    <img src="https://img.shields.io/badge/⚡%20Live%20Portfolio-pri8899.github.io-007AFF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Portfolio" />
   </a>
   <a href="https://codeforces.com/profile/pri8899">
     <img src="https://img.shields.io/badge/Codeforces-pri8899-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces Profile" />
@@ -17,7 +17,7 @@
 </p>
 
 ```zsh
-pri8899@macbook-pro:~$ whoami
+pri8899@workstation:~$ whoami
 {
   "name": "Partho Prithom Paul Sujoy",
   "university": "Ahsanullah University of Science and Technology (AUST)",
@@ -50,7 +50,7 @@ pri8899@macbook-pro:~$ whoami
 ---
 
 <p align="center">
-  🖥️ <b>Experience the interactive macOS web portfolio:</b><br />
+  ⚡ <b>Explore the live interactive developer portfolio:</b><br />
   👉 <a href="https://pri8899.github.io/"><b>https://pri8899.github.io/</b></a><br />
   <i>(Featuring Spotlight Search ⌘K, Interactive Terminal, Activity Monitor &amp; 3D Tilt)</i>
 </p>
