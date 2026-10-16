@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://pri8899.github.io/">
-    <img src="https://img.shields.io/badge/⚡%20Live%20Portfolio-pri8899.github.io-007AFF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Portfolio" />
+    <img src="https://img.shields.io/badge/Portfolio-pri8899.github.io-0A84FF?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio" />
   </a>
   <a href="https://codeforces.com/profile/pri8899">
     <img src="https://img.shields.io/badge/Codeforces-pri8899-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codeforces Profile" />
