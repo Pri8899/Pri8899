@@ -15,27 +15,27 @@
 
 <br/>
 
-<!-- CodeSync Pro Unified Telemetry Card -->
+<!-- CodeSync Pro Unified Telemetry Card (Directly Synchronized with CP) -->
 <a href="https://github.com/Pri8899/CP">
-  <img src="assets/codesync-stats.svg" alt="CodeSync Pro Dynamic Stats Card" width="520" />
+  <img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/codesync-stats.svg" alt="CodeSync Pro Dynamic Stats Card" width="520" />
 </a>
 
 <br/><br/>
 
-<!-- Multi-Platform Solved Overview -->
+<!-- Multi-Platform Solved Overview (Directly Synchronized with CP) -->
 <a href="https://github.com/Pri8899/CP">
-  <img src="assets/overview.svg" alt="Problem Solved Overview" width="920" />
+  <img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/overview.svg" alt="Problem Solved Overview" width="920" />
 </a>
 
 <br/><br/>
 
-<!-- Standardized Glowing Platform Profile Badges -->
+<!-- Standardized Glowing Platform Profile Badges (Directly Synchronized with CP) -->
 <p align="center">
-  <a href="https://codeforces.com/profile/Pri8899"><img src="assets/codeforces.svg" alt="Codeforces Profile" width="150" /></a>
-  <a href="https://leetcode.com/Pri8899"><img src="assets/leetcode.svg" alt="LeetCode Profile" width="150" /></a>
-  <a href="https://atcoder.jp"><img src="assets/atcoder.svg" alt="AtCoder Profile" width="150" /></a>
-  <a href="https://cses.fi/problemset"><img src="assets/cses.svg" alt="CSES Profile" width="150" /></a>
-  <a href="https://toph.co/u/Pri8899"><img src="assets/toph.svg" alt="Toph Profile" width="150" /></a>
+  <a href="https://codeforces.com/profile/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/codeforces.svg" alt="Codeforces Profile" width="150" /></a>
+  <a href="https://leetcode.com/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/leetcode.svg" alt="LeetCode Profile" width="150" /></a>
+  <a href="https://atcoder.jp"><img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/atcoder.svg" alt="AtCoder Profile" width="150" /></a>
+  <a href="https://cses.fi/problemset"><img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/cses.svg" alt="CSES Profile" width="150" /></a>
+  <a href="https://toph.co/u/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/toph.svg" alt="Toph Profile" width="150" /></a>
 </p>
 
 </div>
