@@ -4,7 +4,7 @@
 
 # Hi there, I'm Partho Paul 👋
 
-**Competitive Programmer &middot; CSE Undergrad @ AUST**
+**Competitive Programmer &middot; Developer &middot; CSE Undergrad @ AUST**
 
 <br/>
 
