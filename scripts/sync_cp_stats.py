@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Synchronize all CP telemetry SVG cards from Pri8899/CP into Pri8899/Pri8899."""
+"""Synchronize all CP telemetry SVG cards and profile links from Pri8899/CP into Pri8899/Pri8899."""
 
 import json
 import os
 import re
 import subprocess
+import urllib.parse
 import urllib.request
 
 CP_REPO = "Pri8899/CP"
@@ -17,6 +18,20 @@ SVG_FILES = [
     "cses.svg",
     "toph.svg",
 ]
+PLATFORM_BADGE_SVGS = (
+    "codeforces.svg",
+    "leetcode.svg",
+    "atcoder.svg",
+    "cses.svg",
+    "toph.svg",
+)
+FALLBACK_URLS = {
+    "https://codeforces.com",
+    "https://leetcode.com",
+    "https://atcoder.jp",
+    "https://cses.fi/problemset",
+    "https://toph.co",
+}
 
 
 def http_get(url: str, headers: dict | None = None) -> str:
@@ -48,17 +63,51 @@ def fetch_latest_cp_sha() -> str:
     return data["sha"]
 
 
-def normalize_svg(name: str, content: str) -> str:
-    if name == "codesync-stats.svg":
-        content = re.sub(
-            r'<g transform="translate\(390,\s*21\)">\s*<rect width="81"',
-            '<g transform="translate(380, 21)">\n    <rect width="91"',
-            content,
+def extract_cp_profile_links(cp_readme: str) -> dict[str, str]:
+    """Extract platform badge profile hrefs keyed by badge SVG filename."""
+    links: dict[str, str] = {}
+    for svg_name in PLATFORM_BADGE_SVGS:
+        match = re.search(
+            rf'<a\s+href="([^"]+)"[^>]*>\s*<img\s+[^>]*src="[^"]*assets/{re.escape(svg_name)}"',
+            cp_readme,
         )
-        content = content.replace('letter-spacing="0.4px">AUTO-SYNC</text>', 'letter-spacing="0.3px">AUTO-SYNC</text>')
-    elif name == "overview.svg":
-        content = content.replace(">Problem Solved by platform<", ">Problems Solved by Platform<")
-    return content
+        if match:
+            links[svg_name] = match.group(1).strip()
+    return links
+
+
+def resolve_profile_url(svg_name: str, cp_href: str, existing_href: str) -> str:
+    """Resolve synced profile URL while avoiding overwriting a real profile link with a bare fallback."""
+    clean_cp = cp_href.strip().rstrip("/")
+    clean_existing = existing_href.strip().rstrip("/")
+
+    if clean_cp in FALLBACK_URLS and clean_existing and clean_existing not in FALLBACK_URLS:
+        return existing_href
+
+    if svg_name == "leetcode.svg":
+        parsed = urllib.parse.urlparse(clean_cp)
+        parts = [p for p in parsed.path.split("/") if p]
+        if parsed.netloc.endswith("leetcode.com") and len(parts) == 1:
+            return f"https://leetcode.com/u/{parts[0]}/"
+
+    return cp_href
+
+
+def sync_readme_platform_links(readme: str, cp_links: dict[str, str]) -> tuple[str, dict[str, str]]:
+    """Update platform badge <a href="..."> links in README.md from Pri8899/CP/README.md."""
+    applied: dict[str, str] = {}
+    for svg_name, cp_href in cp_links.items():
+        pattern = re.compile(
+            rf'(<a\s+href=")([^"]+)("[^>]*>\s*<img\s+[^>]*src="[^"]*assets/{re.escape(svg_name)}"[^>]*></a>)'
+        )
+
+        def _replace(match: re.Match[str]) -> str:
+            target = resolve_profile_url(svg_name, cp_href, match.group(2))
+            applied[svg_name] = target
+            return f"{match.group(1)}{target}{match.group(3)}"
+
+        readme = pattern.sub(_replace, readme)
+    return readme, applied
 
 
 def main() -> None:
@@ -73,11 +122,13 @@ def main() -> None:
         svg = http_get(raw_url)
         if "<svg" not in svg or "</svg>" not in svg:
             raise RuntimeError(f"Invalid SVG payload received for {name}")
-        svg = normalize_svg(name, svg)
         dest_path = os.path.join(assets_dir, name)
         with open(dest_path, "w", encoding="utf-8", newline="\n") as f:
             f.write(svg)
         print(f"Synced {name} from CP@{short_sha}")
+
+    cp_readme = http_get(f"https://raw.githubusercontent.com/{CP_REPO}/{sha}/README.md")
+    cp_links = extract_cp_profile_links(cp_readme)
 
     readme_path = os.path.join(root_dir, "README.md")
     with open(readme_path, "r", encoding="utf-8") as f:
@@ -88,9 +139,11 @@ def main() -> None:
         replacement = f"https://raw.githubusercontent.com/{CP_REPO}/{sha}/assets/{name}"
         readme = re.sub(pattern, replacement, readme)
 
+    readme, applied_links = sync_readme_platform_links(readme, cp_links)
+
     with open(readme_path, "w", encoding="utf-8", newline="\n") as f:
         f.write(readme)
-    print(f"Pinned README.md stats URLs to CP@{short_sha} (immutable CDN path)")
+    print(f"Pinned README.md stats URLs & synced {len(applied_links)} platform links from CP@{short_sha}")
 
 
 if __name__ == "__main__":

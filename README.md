@@ -34,7 +34,7 @@
   <a href="https://codeforces.com/profile/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/codeforces.svg" alt="Codeforces Profile" width="150" /></a>
   <a href="https://leetcode.com/u/Pri8899/"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/leetcode.svg" alt="LeetCode Profile" width="150" /></a>
   <a href="https://atcoder.jp"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/atcoder.svg" alt="AtCoder Profile" width="150" /></a>
-  <a href="https://cses.fi/problemset"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/cses.svg" alt="CSES Profile" width="150" /></a>
+  <a href="https://cses.fi/user/513345"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/cses.svg" alt="CSES Profile" width="150" /></a>
   <a href="https://toph.co/u/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/toph.svg" alt="Toph Profile" width="150" /></a>
 </p>
 

@@ -2,7 +2,9 @@ name: Sync CP Stats & Cards
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/5 * * * *'
+  repository_dispatch:
+    types: [cp-updated]
   workflow_dispatch:
 
 permissions:
@@ -21,7 +23,7 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Sync SVGs and README cache-busters from Pri8899/CP
+      - name: Sync CP SVGs, links, and README from Pri8899/CP
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/sync_cp_stats.py
