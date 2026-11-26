@@ -8,7 +8,6 @@ import subprocess
 import urllib.request
 
 CP_REPO = "Pri8899/CP"
-TARGET_REPO = "Pri8899/Pri8899"
 SVG_FILES = [
     "codesync-stats.svg",
     "overview.svg",
@@ -85,13 +84,13 @@ def main() -> None:
         readme = f.read()
 
     for name in SVG_FILES:
-        pattern = rf"https://raw\.githubusercontent\.com/Pri8899/(?:CP|Pri8899)/main/assets/{re.escape(name)}(?:\?v=[A-Za-z0-9_-]+)?"
-        replacement = f"https://raw.githubusercontent.com/{TARGET_REPO}/main/assets/{name}?v={short_sha}"
+        pattern = rf"https://raw\.githubusercontent\.com/Pri8899/(?:CP|Pri8899)/(?:main|[0-9a-f]{{7,40}})/assets/{re.escape(name)}(?:\?v=[A-Za-z0-9_-]+)?"
+        replacement = f"https://raw.githubusercontent.com/{CP_REPO}/{sha}/assets/{name}"
         readme = re.sub(pattern, replacement, readme)
 
     with open(readme_path, "w", encoding="utf-8", newline="\n") as f:
         f.write(readme)
-    print(f"Updated README.md cache-busters to v={short_sha}")
+    print(f"Pinned README.md stats URLs to CP@{short_sha} (immutable CDN path)")
 
 
 if __name__ == "__main__":
