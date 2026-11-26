@@ -1,0 +1,39 @@
+name: Sync CP Stats & Cards
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-cp-stats
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Pri8899 profile repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Sync SVGs and README cache-busters from Pri8899/CP
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/sync_cp_stats.py
+
+      - name: Commit and push updated stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg README.md
+          if git diff --cached --quiet; then
+            echo "All CP stats are already up to date."
+          else
+            git commit -m "chore(sync): update all CP stats cards from Pri8899/CP [skip ci]"
+            git push
+          fi

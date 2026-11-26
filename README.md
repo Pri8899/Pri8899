@@ -8,34 +8,34 @@
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-pri8899.github.io-0A84FF?style=for-the-badge&logo=githubpages&logoColor=white)](https://pri8899.github.io/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-pri8899.github.io-0A84FF?style=for-the-badge&logo=github&logoColor=white)](https://pri8899.github.io/)
 [![Codeforces](https://img.shields.io/badge/Codeforces-pri8899-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/pri8899)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Pri8899-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/Pri8899)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Pri8899-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Pri8899/)
 [![Email](https://img.shields.io/badge/Email-parthopaul8899%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parthopaul8899@gmail.com)
 
 <br/>
 
 <!-- CodeSync Pro Unified Telemetry Card (Directly Synchronized with CP) -->
 <a href="https://github.com/Pri8899/CP">
-  <img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/codesync-stats.svg" alt="CodeSync Pro Dynamic Stats Card" width="520" />
+  <img src="https://raw.githubusercontent.com/Pri8899/Pri8899/main/assets/codesync-stats.svg?v=246c85d" alt="CodeSync Pro Dynamic Stats Card" width="520" />
 </a>
 
 <br/><br/>
 
 <!-- Multi-Platform Solved Overview (Directly Synchronized with CP) -->
 <a href="https://github.com/Pri8899/CP">
-  <img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/overview.svg" alt="Problem Solved Overview" width="920" />
+  <img src="https://raw.githubusercontent.com/Pri8899/Pri8899/main/assets/overview.svg?v=246c85d" alt="Problems Solved Overview" width="920" />
 </a>
 
 <br/><br/>
 
 <!-- Standardized Glowing Platform Profile Badges (Directly Synchronized with CP) -->
 <p align="center">
-  <a href="https://codeforces.com/profile/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/codeforces.svg" alt="Codeforces Profile" width="150" /></a>
-  <a href="https://leetcode.com/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/leetcode.svg" alt="LeetCode Profile" width="150" /></a>
-  <a href="https://atcoder.jp"><img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/atcoder.svg" alt="AtCoder Profile" width="150" /></a>
-  <a href="https://cses.fi/problemset"><img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/cses.svg" alt="CSES Profile" width="150" /></a>
-  <a href="https://toph.co/u/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/main/assets/toph.svg" alt="Toph Profile" width="150" /></a>
+  <a href="https://codeforces.com/profile/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/Pri8899/main/assets/codeforces.svg?v=246c85d" alt="Codeforces Profile" width="150" /></a>
+  <a href="https://leetcode.com/u/Pri8899/"><img src="https://raw.githubusercontent.com/Pri8899/Pri8899/main/assets/leetcode.svg?v=246c85d" alt="LeetCode Profile" width="150" /></a>
+  <a href="https://atcoder.jp"><img src="https://raw.githubusercontent.com/Pri8899/Pri8899/main/assets/atcoder.svg?v=246c85d" alt="AtCoder Profile" width="150" /></a>
+  <a href="https://cses.fi/problemset"><img src="https://raw.githubusercontent.com/Pri8899/Pri8899/main/assets/cses.svg?v=246c85d" alt="CSES Profile" width="150" /></a>
+  <a href="https://toph.co/u/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/Pri8899/main/assets/toph.svg?v=246c85d" alt="Toph Profile" width="150" /></a>
 </p>
 
 </div>
