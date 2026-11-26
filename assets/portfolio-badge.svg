@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="214" height="28" role="img" aria-label="PORTFOLIO: PRI8899.GITHUB.IO">
+  <title>PORTFOLIO: PRI8899.GITHUB.IO</title>
+  <g shape-rendering="crispEdges">
+    <rect width="84" height="28" fill="#555555"/>
+    <rect x="84" width="130" height="28" fill="#0A84FF"/>
+  </g>
+  <g fill="#ffffff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="100">
+    <path d="M12.5 9.5l4.2 4.5-4.2 4.5" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="18.2" y1="18" x2="22.8" y2="18" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+    <text transform="scale(.1)" x="515" y="175" fill="#ffffff" letter-spacing="12">PORTFOLIO</text>
+    <text transform="scale(.1)" x="1490" y="175" fill="#ffffff" font-weight="bold" letter-spacing="8">PRI8899.GITHUB.IO</text>
+  </g>
+</svg>

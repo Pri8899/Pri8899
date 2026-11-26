@@ -8,7 +8,7 @@
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-pri8899.github.io-0A84FF?style=for-the-badge&logo=github&logoColor=white)](https://pri8899.github.io/)
+[![Portfolio](https://raw.githubusercontent.com/Pri8899/Pri8899/main/assets/portfolio-badge.svg)](https://pri8899.github.io/)
 [![Codeforces](https://img.shields.io/badge/Codeforces-pri8899-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/pri8899)
 [![LeetCode](https://img.shields.io/badge/LeetCode-Pri8899-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/Pri8899/)
 [![Email](https://img.shields.io/badge/Email-parthopaul8899%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parthopaul8899@gmail.com)
