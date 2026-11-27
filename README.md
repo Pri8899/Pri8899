@@ -17,25 +17,25 @@
 
 <!-- CodeSync Pro Unified Telemetry Card (Directly Synchronized with CP) -->
 <a href="https://github.com/Pri8899/CP">
-  <img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/codesync-stats.svg" alt="CodeSync Pro Dynamic Stats Card" width="520" />
+  <img src="https://raw.githubusercontent.com/Pri8899/CP/eacda1bb0ad3876b64df996eae33be9ec741aae8/assets/codesync-stats.svg" alt="CodeSync Pro Dynamic Stats Card" width="520" />
 </a>
 
 <br/><br/>
 
 <!-- Multi-Platform Solved Overview (Directly Synchronized with CP) -->
 <a href="https://github.com/Pri8899/CP">
-  <img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/overview.svg" alt="Problems Solved Overview" width="920" />
+  <img src="https://raw.githubusercontent.com/Pri8899/CP/eacda1bb0ad3876b64df996eae33be9ec741aae8/assets/overview.svg" alt="Problems Solved Overview" width="920" />
 </a>
 
 <br/><br/>
 
 <!-- Standardized Glowing Platform Profile Badges (Directly Synchronized with CP) -->
 <p align="center">
-  <a href="https://codeforces.com/profile/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/codeforces.svg" alt="Codeforces Profile" width="150" /></a>
-  <a href="https://leetcode.com/u/Pri8899/"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/leetcode.svg" alt="LeetCode Profile" width="150" /></a>
-  <a href="https://atcoder.jp"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/atcoder.svg" alt="AtCoder Profile" width="150" /></a>
-  <a href="https://cses.fi/user/513345"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/cses.svg" alt="CSES Profile" width="150" /></a>
-  <a href="https://toph.co/u/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/246c85d1a6233d06cea0fd09a952d410a83328d3/assets/toph.svg" alt="Toph Profile" width="150" /></a>
+  <a href="https://codeforces.com/profile/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/eacda1bb0ad3876b64df996eae33be9ec741aae8/assets/codeforces.svg" alt="Codeforces Profile" width="150" /></a>
+  <a href="https://leetcode.com/u/Pri8899/"><img src="https://raw.githubusercontent.com/Pri8899/CP/eacda1bb0ad3876b64df996eae33be9ec741aae8/assets/leetcode.svg" alt="LeetCode Profile" width="150" /></a>
+  <a href="https://atcoder.jp"><img src="https://raw.githubusercontent.com/Pri8899/CP/eacda1bb0ad3876b64df996eae33be9ec741aae8/assets/atcoder.svg" alt="AtCoder Profile" width="150" /></a>
+  <a href="https://cses.fi/user/513345"><img src="https://raw.githubusercontent.com/Pri8899/CP/eacda1bb0ad3876b64df996eae33be9ec741aae8/assets/cses.svg" alt="CSES Profile" width="150" /></a>
+  <a href="https://toph.co/u/Pri8899"><img src="https://raw.githubusercontent.com/Pri8899/CP/eacda1bb0ad3876b64df996eae33be9ec741aae8/assets/toph.svg" alt="Toph Profile" width="150" /></a>
 </p>
 
 </div>
